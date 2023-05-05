@@ -15,7 +15,7 @@ function exercicio1() {
     }
 }
 
-exercicio1()
+// exercicio1()
 
 // // 2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
 
@@ -33,7 +33,7 @@ function exercicio2() {
     }
 }
 
-exercicio2()
+// exercicio2()
 
 // // //3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
 
@@ -51,7 +51,7 @@ function exercicio3() {
     }
 }
 
-exercicio3()
+// exercicio3()
 
 // // 4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
 
@@ -74,7 +74,7 @@ function exercicio4() {
     }
 }
 
-exercicio4()
+// exercicio4()
 
 // 5.  Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
 
@@ -90,7 +90,7 @@ function exercicio5() {
     alert(`Os números informados foram:   ${valor1} + ${valor2} + ${valor3} + ${valor4} + ${valor5} + ${valor6}. \n E a média aritmética é:  ${media}`)
 }
 
-exercicio5()
+// exercicio5()
 
 // // 6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
 
@@ -117,7 +117,7 @@ function exercicio6() {
     alert(`O primeiro número é:  ${valor1}.\n Já o último informado é:  ${valor4}.\n Por fim, o maior dentre os quatro valores informados é:  ${maiorValor} `);
 }
 
-exercicio6()
+// exercicio6()
 
 // // 7. Faça um programa que leia 6 números que o usuário vai informar.Todos os números lidos com valor inferior a 72 devem ser somados.Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
 
@@ -139,7 +139,7 @@ function exercicio7() {
     alert(`O valor final da soma é: ${soma}. \nE os números informados foram:  ${number1},  ${number2},  ${number3},  ${number4},  ${number5},  ${number6}.`);
 }
 
-exercicio7()
+// exercicio7()
 
 // // 8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
 
@@ -170,7 +170,7 @@ function exercicio8() {
     }
 }
 
-exercicio8()
+// exercicio8()
 
 // 9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano(não é necessário considerar o mês em que ela nasceu).
 
@@ -188,7 +188,7 @@ function exercicio9() {
     }
 }
 
-exercicio9()
+// exercicio9()
 
 //10. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
 
@@ -218,7 +218,7 @@ function exercicio10() {
 
 }
 
-exercicio10()
+// exercicio10()
 
 // 11. Uma micro calculadora
 // Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
@@ -243,7 +243,7 @@ function exercicio11() {
     }
 }
 
-exercicio11()
+// exercicio11()
 
 // Menu
 function Menu() {
@@ -263,6 +263,47 @@ function Menu() {
     11 = Exercicio 11
     `))
 
+    switch (mensagem) {
+        case 1:
+            exercicio1()
+            break
+        case 2:
+            exercicio2()
+            break
+        case 3:
+            exercicio3()
+            break
+        case 4:
+            exercicio4()
+            break
+        case 5:
+            exercicio5()
+            break
+        case 6:
+            exercicio6()
+            break
+        case 7:
+            exercicio7()
+            break
+        case 8:
+            exercicio8()
+            break
+        case 9:
+            exercicio9()
+            break
+        case 10:
+            exercicio10()
+            break
+        case 11:
+            exercicio11()
+            break
+        default:
+            alert("Por favor, insira um número entre 1 e 11")
+            Main()
+            break
+    }
+
+    Menu();
 }
 
-// Menu()
+Menu()
